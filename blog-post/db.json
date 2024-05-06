@@ -1,0 +1,84 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Post 1",
+        "author": "John Doe",
+        "body": "This is the first post.",
+        "category": "general",
+        "image": "image1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Post 2",
+        "author": "Jane Doe",
+        "body": "This is the second post.",
+        "category": "general",
+        "image": "image2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Post 3",
+        "author": "John Doe",
+        "body": "This is the third post.",
+        "category": "programming",
+        "image": "image3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Post 4",
+        "author": "Jane Doe",
+        "body": "This is the fourth post.",
+        "category": "programming",
+        "image": "image4.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Post 5",
+        "author": "John Doe",
+        "body": "This is the fifth post.",
+        "category": "general",
+        "image": "image5.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Post 6",
+        "author": "Jane Doe",
+        "body": "This is the sixth post.",
+        "category": "general",
+        "image": "image6.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Post 7",
+        "author": "John Doe",
+        "body": "This is the seventh post.",
+        "category": "programming",
+        "image": "image7.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Post 8",
+        "author": "Jane Doe",
+        "body": "This is the eighth post.",
+        "category": "programming",
+        "image": "image8.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Post 9",
+        "author": "John Doe",
+        "body": "This is the ninth post.",
+        "category": "general",
+        "image": "image9.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Post 10",
+        "author": "Jane Doe",
+        "body": "This is the tenth post.",
+        "category": "general",
+        "image": "image10.jpg"
+      }
+    ]
+  }

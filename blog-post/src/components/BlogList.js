@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import FeaturedBlog from './BlogList';
+import FeaturedBlog from './FeaturedBlog';
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -9,7 +9,7 @@ const BlogList = () => {
     axios
       .get('http://localhost:8002/posts')
       .then((res) => {
-        setBlogs(res.data.posts); // Assuming your response structure is an object with a 'posts' array
+        setBlogs(res.data.posts);
       })
       .catch((error) => {
         console.error('Error fetching blogs:', error);

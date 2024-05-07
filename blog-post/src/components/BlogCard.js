@@ -1,14 +1,25 @@
 import React from 'react';
 
-const BlogCard = ({ blog }) => {
-  const { title, author, category, body, image } = blog; 
+const BlogCard = ({ blogs }) => {
+  // Filter the blogs where featured is false
+  const normalBlogs = blogs.filter((blog) => blog.featured === 'false');
+
   return (
-    <div className="blog-card">
-      <h1>{title}</h1>
-      {image && <img src={image} alt={title} />} <p>{body}</p>
-      <p>{category}</p>
-      <h1>{author}</h1>
-    </div>
+    <>
+      {normalBlogs.map((blog) => (
+        <div key={blog.id}>
+          <div>
+            <h3>{blog.title}</h3>
+            {blog.image && (
+              <img className="blogImage" src={blog.image} alt={blog.title} />
+            )}
+            <p>{blog.body}</p>
+            <p>{blog.category}</p>
+            <p>{blog.author}</p>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 

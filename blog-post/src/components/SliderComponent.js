@@ -1,38 +1,58 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./img.css";
+import React, { useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import BlogModal from './BlogModal';
+import './img.css';
+
+const truncateText = (text, length) => {
+  return text.length > length ? `${text.substring(0, length)}...` : text;
+};
 
 const SliderComponent = ({ blogs }) => {
-  // Filter the blogs where featured is true
-  const featuredBlogs = blogs.filter((blog) => blog.featured === "true");
+  const [selectedBlog, setSelectedBlog] = useState(null);
 
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 2000,
+    speed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
 
+  const handleOpenModal = (blog) => {
+    setSelectedBlog(blog);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedBlog(null);
+  };
+
   return (
-    <Slider {...settings}>
-      {featuredBlogs.map((blog) => (
-        <div key={blog.id} className="featured-post">
-          <div>
+    <>
+      <Slider {...settings}>
+        {blogs.map((blog) => (
+          <div key={blog.id} className="featured-post blog-post">
             <h3>{blog.title}</h3>
             {blog.image && (
               <img className="blog-image" src={blog.image} alt={blog.title} />
             )}
-            <p>{blog.body}</p>
+            <p>
+              {truncateText(blog.body, 100)}{' '}
+              <button onClick={() => handleOpenModal(blog)}>Read More</button>
+            </p>
             <p>{blog.category}</p>
             <p>{blog.author}</p>
           </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
+      <BlogModal
+        blog={selectedBlog}
+        isVisible={Boolean(selectedBlog)}
+        onClose={handleCloseModal}
+      />
+    </>
   );
 };
 

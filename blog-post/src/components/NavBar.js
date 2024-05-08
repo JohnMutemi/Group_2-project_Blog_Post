@@ -1,19 +1,21 @@
-// components/NavBar.js
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import "./NavBar.css";
 
 function NavBar() {
-  return (
-    <nav>
-      <NavLink to="/" className="nav-link" end>
-        Home
-      </NavLink>
-      <NavLink to="/signin" className="nav-link">
-        Sign In
-      </NavLink>
-    </nav>
-  );
+  return (
+    <nav className="nav">
+      <div className="topCenter">
+        <ul className="topList">
+          <li className="topListItem">HOME</li>
+          <li className="topListItem">SIGN IN</li>
+          <li className="topListItem">LOGOUT</li>
+        </ul>
+      </div>
+      <div className="topRight">
+        <img src="" alt="" />
+        <i className="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </nav>
+  );
 }
 
 export default NavBar;

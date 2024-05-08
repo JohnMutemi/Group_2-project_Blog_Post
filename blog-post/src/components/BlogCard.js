@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import BlogModal from './BlogModal';
 import './img.css';
@@ -30,6 +31,7 @@ const BlogCard = ({ blogs }) => {
               {truncateText(blog.body, 100)}{' '}
               <button onClick={() => handleOpenModal(blog)}>Read More</button>
             </p>
+
             <p>{blog.category}</p>
             <p>{blog.author}</p>
           </div>

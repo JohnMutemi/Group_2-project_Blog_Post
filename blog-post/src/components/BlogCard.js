@@ -1,22 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import BlogModal from './BlogModal';
+import './img.css';
+
+const truncateText = (text, length) => {
+  return text.length > length ? `${text.substring(0, length)}...` : text;
+};
 
 const BlogCard = ({ blogs }) => {
-  // Filter the blogs where featured is false
-  const normalBlogs = blogs.filter((blog) => blog.featured === "false");
+  const [selectedBlog, setSelectedBlog] = useState(null);
+
+  const handleOpenModal = (blog) => {
+    setSelectedBlog(blog);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedBlog(null);
+  };
 
   return (
     <>
-      {normalBlogs.map((blog) => (
-        <div key={blog.id}>
-          <div className="blog-card">
-            <h1>{blog.title}</h1>
-            {blog.image && <img src={blog.image} alt={blog.title} />}
-            <p>{blog.body}</p>
+      <div className="blog-list">
+        {blogs.map((blog) => (
+          <div key={blog.id} className="blog-post">
+            <h3>{blog.title}</h3>
+            {blog.image && (
+              <img className="blog-image" src={blog.image} alt={blog.title} />
+            )}
+            <p>
+              {truncateText(blog.body, 100)}{' '}
+              <button onClick={() => handleOpenModal(blog)}>Read More</button>
+            </p>
             <p>{blog.category}</p>
-            <h1>{blog.author}</h1>
+            <p>{blog.author}</p>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <BlogModal
+        blog={selectedBlog}
+        isVisible={Boolean(selectedBlog)}
+        onClose={handleCloseModal}
+      />
     </>
   );
 };

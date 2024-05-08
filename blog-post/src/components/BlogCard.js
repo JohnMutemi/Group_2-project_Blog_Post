@@ -1,6 +1,4 @@
-import React from "react";
-import "./img.css";
-// import Slider from 'react-slick';
+import React from 'react';
 
 const BlogCard = ({ blogs }) => {
   // Filter the blogs where featured is false
@@ -10,14 +8,12 @@ const BlogCard = ({ blogs }) => {
     <>
       {normalBlogs.map((blog) => (
         <div key={blog.id}>
-          <div>
-            <h3>{blog.title}</h3>
-            {blog.image && (
-              <img className="blog-image" src={blog.image} alt={blog.title} />
-            )}
+          <div className="blog-card">
+            <h1>{blog.title}</h1>
+            {blog.image && <img src={blog.image} alt={blog.title} />}
             <p>{blog.body}</p>
             <p>{blog.category}</p>
-            <p>{blog.author}</p>
+            <h1>{blog.author}</h1>
           </div>
         </div>
       ))}

@@ -1,4 +1,3 @@
-// components/BlogCard.js
 import React, { useState } from 'react';
 import BlogModal from './BlogModal';
 import './img.css';

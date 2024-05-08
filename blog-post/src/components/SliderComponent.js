@@ -33,10 +33,14 @@ const SliderComponent = ({ blogs }) => {
     <>
       <Slider {...settings}>
         {blogs.map((blog) => (
-          <div key={blog.id} className="featured-post blog-post">
+          <div key={blog.id} className="featured-post">
             <h3>{blog.title}</h3>
             {blog.image && (
-              <img className="blog-image" src={blog.image} alt={blog.title} />
+              <img
+                className="featured-blog-image"
+                src={blog.image}
+                alt={blog.title}
+              />
             )}
             <p>
               {truncateText(blog.body, 100)}{' '}

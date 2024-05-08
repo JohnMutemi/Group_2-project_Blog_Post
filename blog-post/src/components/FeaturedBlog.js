@@ -1,4 +1,3 @@
-// components/FeaturedBlog.js
 import React from 'react';
 import SliderComponent from './SliderComponent';
 

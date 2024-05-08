@@ -1,4 +1,3 @@
-// components/BlogList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FeaturedBlog from './FeaturedBlog';

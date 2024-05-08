@@ -1,26 +1,25 @@
 import React from 'react';
-import Slider from 'react-slick';
-import BlogCard from './BlogCard';
 
 const FeaturedBlog = ({ blogs }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
   return (
-    <Slider {...settings}>
-      {blogs.map((blog) => (
-        <div key={blog.id}>
-          <BlogCard blog={blog} />
-        </div>
-      ))}
-    </Slider>
+    <div className="container">
+      <div className="row">
+        {blogs.map((blog) => (
+          <div className="col-md-4" key={blog.id}>
+            <div className="card">
+              <img src={blog.image} className="card-img-top" alt={blog.title} />
+              <div className="card-body">
+                <h5 className="card-title">{blog.title}</h5>
+                <p className="card-text">{blog.description}</p>
+                <a href={blog.link} className="btn btn-primary">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

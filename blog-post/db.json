@@ -16,7 +16,7 @@
       "body": "Dive into the world of flavors and techniques as we explore the art of cooking. From mastering basic recipes to experimenting with exotic ingredients, there's something for every aspiring chef.",
       "category": "Food",
       "image": "https://images.unsplash.com/photo-1584987404158-79e7637a29d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
-      "featured": "true"
+      "featured": "false"
     },
     {
       "id": 3,
@@ -43,7 +43,52 @@
       "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
       "category": "Travel",
       "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
+      "featured": "false"
+    },
+    {
+      "id": 6,
+      "title": "Urban Exploration: Discovering Hidden Gems in the City",
+      "author": "Emily Wilson",
+      "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
+      "category": "Travel",
+      "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
+      "featured": "false"
+    },
+    {
+      "id": 7,
+      "title": "Urban Exploration: Discovering Hidden Gems in the City",
+      "author": "Emily Wilson",
+      "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
+      "category": "Travel",
+      "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
       "featured": "true"
+    },
+    {
+      "id": 8,
+      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
+      "author": "David Lee",
+      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
+      "category": "Wellness",
+      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
+      "featured": "false"
+    },
+    {
+      "id": 9,
+      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
+      "author": "David Lee",
+      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
+      "category": "Wellness",
+      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
+      "featured": "true"
+    },
+    {
+      "id": 10,
+      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
+      "author": "David Lee",
+      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
+      "category": "Wellness",
+      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
+      "featured": "false"
     }
   ]
 }

@@ -1,45 +1,50 @@
-.nav{
-    width: 100%;
-    height: 50px;
-    position: sticky;
-    top:0;
-    display:flex;
-    align-items: center;
-    font-family: 'Josefins Sans', sans-serif;
-    background-color: rgb(235, 141, 18);
+NavBar.css:
+.nav {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Josefins Sans', sans-serif;
+  background-color: rgb(235, 141, 18);
 }
-.topRight{
-    flex:3;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-}
-.topCenter{
-    flex:30;
-}
-.topIcon{
-    font-size: 20px;
-    margin-right: 10px;
-    color:#444;
-    cursor: pointer;
 
+.topCenter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.topList{
-    display: flex;
-    justify-content: center;
-    margin:0;
-    padding:0;
-    list-style: none;
+
+.topList {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
-.topListItem{
-    margin-right: 40px;
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
+
+.topListItem {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 60px;
+  padding: 5px;
+  margin: 0 6px 6px;
+  background-color: rgb(219, 214, 196);
+  text-decoration: none;
+  text-align: center;
+  font-size: min(10vw, 15px);
+  color: rgb(10, 10, 10);
 }
-.topSearchIcon{
-    font-size: 18;
-    cursor: pointer;
-    color:#666;
-    margin-left: 5;
+
+.topRight {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-magnifying-glass {
+  margin-left: 6px;
+  font-size: 1.5rem;
+  color: rgb(10, 10, 10);
 }

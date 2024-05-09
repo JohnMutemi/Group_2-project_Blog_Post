@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import BlogCard from './BlogCard';
 import FeaturedBlog from './FeaturedBlog';
 
+
+
 const SearchingBlog = ({ blogs }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,29 +18,32 @@ const SearchingBlog = ({ blogs }) => {
 
   const filteredBlogs = blogs.filter((blog) => {
     const title = blog?.title?.toLowerCase() || '';
-  const body = blog?.body?.toLowerCase() || '';
-  const category = blog?.category?.toLowerCase() || '';
-  const author = blog?.author?.toLowerCase() || '';
+    const body = blog?.body?.toLowerCase() || '';
+    const category = blog?.category?.toLowerCase() || '';
+    const author = blog?.author?.toLowerCase() || '';
 
     const searchCondition =
-    title.include(searchQuery) ||
-      body.include(searchQuery) ||
-    category.include(searchQuery) ||
-      author.include(searchQuery);
+      title.includes(searchQuery) ||
+      body.includes(searchQuery) ||
+      category.includes(searchQuery) ||
+      author.includes(searchQuery);
 
     return searchCondition;
   }) || [];
 
   return (
     <div>
-      <div>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
         <input
           type="text"
           placeholder="Search..."
           value={searchTerm}
           onChange={handleInputChange}
+          style={{ padding: '0.5rem', marginRight: '0.5rem' }}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch} style={{ padding: '0.5rem' }}>
+          Search
+        </button>
       </div>
       <h2>Featured Blog</h2>
       <FeaturedBlog blogs={filteredBlogs.filter((blog) => blog.featured === 'true')} />

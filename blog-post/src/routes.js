@@ -1,8 +1,9 @@
-import App from './App';
-import Home from './components/Home';
+import App from "./App";
+import CreateBlogPost from "./components/CreateBlogpost"; // Changed import path
+import Home from "./components/Home";
 
 import SignIn from './components/SignIn';
-import Register from './components/register';
+import Register from './components/Register'; // Corrected capitalization in import path
 
 const routes = [
   {
@@ -17,6 +18,10 @@ const routes = [
       {
         path: '/signin',
         element: <SignIn />,
+      },
+      {
+        path: "/create-blog-post", // Changed path to match imported component
+        element: <CreateBlogPost />,
       },
       {
         path: '/register',

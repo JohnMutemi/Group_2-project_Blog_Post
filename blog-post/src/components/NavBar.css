@@ -7,9 +7,10 @@
   align-items: center;
   font-family: 'Josefins Sans', sans-serif;
   background-color: rgb(235, 141, 18);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 10px; /* Resolved conflict */
+  border-top-right-radius: 10px; /* Resolved conflict */
 }
+
 .topCenter {
   width: 50%;
   display: flex;
@@ -38,6 +39,12 @@
   color: black;
   font-weight: bold;
   flex: auto;
+}
+
+.topListItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .topRight {

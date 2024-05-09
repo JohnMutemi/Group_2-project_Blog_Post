@@ -1,0 +1,81 @@
+/* SignIn.css */
+
+.form-container {height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://media.istockphoto.com/id/1443624778/photo/beautiful-young-black-woman-outdoors-in-the-city.jpg?s=612x612&w=0&k=20&c=jYkXZMN3YB-hlMJ96GO_XPZRDYQBuBgJK3_I16g-U1o=");
+    background-size: cover;
+  }
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(146, 64, 167);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-container button:hover {
+  background-color: #5a2d87;
+}
+
+.button-container span {
+  font-size: 16px;
+}
+
+.button-container .btn-link {
+  background: none;
+  border: none;
+  color: rgb(146, 64, 167);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-container .btn-link:hover {
+  color: #5a2d87;
+}

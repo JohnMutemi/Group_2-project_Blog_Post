@@ -1,15 +1,15 @@
-// components/Home.js
+// src/pages/Home.js
 import React from 'react';
-// import BlogList from './BlogList';
+import BlogList from '../components/BlogList';
+import NavBar from '../components/NavBar';
 
-const Home = () => {
+function Home() {
   return (
-    <div className="homepage-background">
-      <div className="content-wrapper">
-        {/* <BlogList /> */}
-      </div>
-    </div>
+    <>
+      <NavBar />
+      <BlogList />
+    </>
   );
-};
+}
 
 export default Home;

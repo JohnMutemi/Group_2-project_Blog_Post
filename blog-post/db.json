@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Exploring the Wonders of Nature",
       "author": "Alice Johnson",
       "body": "From lush forests to towering mountains, nature never fails to inspire awe. Join me on a journey through some of the most breathtaking landscapes on Earth.",
@@ -10,7 +10,7 @@
       "featured": "true"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "The Art of Cooking: A Culinary Adventure",
       "author": "Michael Smith",
       "body": "Dive into the world of flavors and techniques as we explore the art of cooking. From mastering basic recipes to experimenting with exotic ingredients, there's something for every aspiring chef.",
@@ -19,7 +19,7 @@
       "featured": "false"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Unlocking Creativity: Embracing Your Inner Artist",
       "author": "Sarah Brown",
       "body": "Creativity knows no bounds. Discover how to tap into your imagination, overcome creative blocks, and unleash your artistic potential in this exploration of the creative process.",
@@ -28,7 +28,7 @@
       "featured": "false"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
       "author": "David Lee",
       "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
@@ -37,7 +37,7 @@
       "featured": "false"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Urban Exploration: Discovering Hidden Gems in the City",
       "author": "Emily Wilson",
       "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
@@ -46,7 +46,7 @@
       "featured": "false"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Urban Exploration: Discovering Hidden Gems in the City",
       "author": "Emily Wilson",
       "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
@@ -55,7 +55,7 @@
       "featured": "false"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Urban Exploration: Discovering Hidden Gems in the City",
       "author": "Emily Wilson",
       "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
@@ -64,7 +64,7 @@
       "featured": "true"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
       "author": "David Lee",
       "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
@@ -73,7 +73,7 @@
       "featured": "false"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
       "author": "David Lee",
       "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
@@ -82,13 +82,46 @@
       "featured": "true"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
       "author": "David Lee",
       "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
       "category": "Wellness",
       "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
       "featured": "false"
+    }
+  ],
+  "users": [
+    {
+      "username": "John Doe",
+      "email": "john@gmail.com",
+      "password": "thias",
+      "id": "1"
+    },
+    {
+      "id": "31fd",
+      "username": "John Doe",
+      "password": "thias"
+    },
+    {
+      "id": "3588",
+      "username": "John Doe",
+      "password": "thias"
+    },
+    {
+      "id": "be05",
+      "username": "John Doe",
+      "password": "thias"
+    },
+    {
+      "id": "7fc6",
+      "username": "John Doe",
+      "password": "thias"
+    },
+    {
+      "id": "4112",
+      "username": "John Doe",
+      "password": "thias"
     }
   ]
 }

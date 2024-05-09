@@ -1,21 +1,26 @@
-import App from "./App";
-import Home from "./components/Home";
+import App from './App';
+import Home from './components/Home';
 
-import SignIn from "./components/SignIn";
+import SignIn from './components/SignIn';
+import Register from './components/register';
 
 const routes = [
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
 
       {
-        path: "/signin",
+        path: '/signin',
         element: <SignIn />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
       },
     ],
   },

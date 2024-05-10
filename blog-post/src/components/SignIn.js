@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './SignIn.css';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { useNavigate, useOutletContext } from "react-router-dom";
+import "./SignIn.css";
+import axios from "axios";
 
 function SignIn() {
   const navigate = useNavigate();
+  const { user, login } = useOutletContext(); // Access the user state from the context
+
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
+    username: "",
+    password: "",
   });
 
   const handleLogin = async (e) => {
@@ -15,7 +17,7 @@ function SignIn() {
 
     try {
       // Make a GET request to fetch the existing users from the server
-      const response = await axios.get('http://localhost:8002/users');
+      const response = await axios.get("http://localhost:8002/users");
       const users = response.data;
       const foundUser = users.find(
         (user) =>
@@ -24,14 +26,15 @@ function SignIn() {
       );
       if (foundUser) {
         // If the user is found, set isAuthenticated to true
-        navigate('/');
+        navigate("/");
+        login(foundUser);
       } else {
         // If the user is not found, display an alert
-        alert('Invalid credentials');
+        alert("Invalid credentials");
       }
     } catch (error) {
-      console.error('Error logging in:', error);
-      alert('An error occurred while logging in. Please try again later.');
+      console.error("Error logging in:", error);
+      alert("An error occurred while logging in. Please try again later.");
     }
   };
 
@@ -66,8 +69,9 @@ function SignIn() {
           <span>Not a registered user? </span>
           <button
             type="button"
-            onClick={() => navigate('/register')}
-            className="btn btn-link">
+            onClick={() => navigate("/register")}
+            className="btn btn-link"
+          >
             Create an account
           </button>
         </div>

@@ -40,18 +40,24 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-.topRight {
+.search-container {
   display: flex;
   align-items: center;
 }
 
-.fa-search {
-  font-size: 20px;
-  color: #fff;
-  margin-right: 10px;
-  cursor: pointer;
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
-.fa-search:hover {
-  color: rgba(255, 255, 255, 0.8);
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: #333;
 }

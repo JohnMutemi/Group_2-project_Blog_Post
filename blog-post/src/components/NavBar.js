@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogoutButton from './LogoutButton'; // Import the LogoutButton component
-
+import LogoutButton from './LogoutButton';
 import './NavBar.css';
 
-function NavBar({ isAuthenticated, onLogout }) {
+function NavBar({ isAuthenticated, onLogout, handleSearch }) {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+    handleSearch(searchTerm.toLowerCase());
+  };
+
   return (
     <nav className="nav">
       <div className="topCenter">
@@ -12,7 +21,6 @@ function NavBar({ isAuthenticated, onLogout }) {
           <li className="topListItem">
             <Link to="/">HOME</Link>
           </li>
-
           <li className="topListItem">
             <Link to="/user-profile">USER PROFILE</Link>
           </li>
@@ -33,9 +41,18 @@ function NavBar({ isAuthenticated, onLogout }) {
           )}
         </ul>
       </div>
-      <div className="topRight">
-        <img src="" alt="" />
-        <i className="fa-solid fa-magnifying-glass"></i>
+
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={handleInputChange}
+          className="search-input"
+        />
+        <button onClick={handleSearchClick} className="search-button">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
     </nav>
   );

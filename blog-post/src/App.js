@@ -1,42 +1,45 @@
-// src/App.js
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import SignIn from './components/SignIn';
-import Register from './components/register';
-import ProtectedRoute from './components/ProtectedRoute';
+import React, { useState, useEffect } from 'react';
+import { Outlet, useNavigate, Navigate } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import { Link } from 'react-router-dom';
+// import Login from './components/Login';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleAuthChange = (status) => {
-    setIsAuthenticated(status);
-  };
-  const handleLogout = () => {
-    // Perform any logout-related actions here, such as clearing local storage, etc.
-    // For now, let's assume we're just updating the authentication status
-    setIsAuthenticated(false);
+  const navigate = useNavigate();
+
+  const login = () => {
+    setIsAuthenticated(true);
+    navigate('/');
   };
 
+  const logout = () => {
+    setIsAuthenticated(false);
+    navigate('/signin');
+    alert('I have been clicked');
+  };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      // navigates to Home route if user is logged in
+      navigate('/');
+    } else {
+      // navigates to Login route if user is logged out
+      navigate('/signin');
+    }
+  }, [isAuthenticated]);
+
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute isAuthenticated={isAuthenticated}>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/signin"
-        element={<SignIn onAuthChange={handleAuthChange} />}
-      />
-      <Route
-        path="/register"
-        element={<Register onAuthChange={handleAuthChange} />}
-      />
-    </Routes>
+    <div className="app">
+      {/* Add conditional rendering so users have to be logged in to see pages on the site */}
+      {isAuthenticated ? (
+        <NavBar logout={logout} Navigate to="./" />
+      ) : (
+        <Navigate to="/login" />
+      )}
+      <Outlet context={{ logout, login }} />;
+    </div>
   );
 }
 

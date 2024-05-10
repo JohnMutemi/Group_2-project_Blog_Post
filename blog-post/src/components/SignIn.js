@@ -1,79 +1,75 @@
-// src/pages/SignIn.js
-import './SignIn.css';
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './SignIn.css';
+import axios from 'axios';
 
-function SignIn({ onAuthChange }) {
+function SignIn() {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ username: '', password: '' });
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const [formData, setFormData] = useState({
+    username: '',
+    password: '',
+  });
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
 
     try {
-      const response = await axios.get('http://localhost:8002/users', formData);
-      if (response.status === 200) {
-        onAuthChange(true);
+      // Make a GET request to fetch the existing users from the server
+      const response = await axios.get('http://localhost:8002/users');
+      const users = response.data;
+      const foundUser = users.find(
+        (user) =>
+          user.username === formData.username &&
+          user.password === formData.password
+      );
+      if (foundUser) {
+        // If the user is found, set isAuthenticated to true
         navigate('/');
       } else {
-        setError('Invalid username or password.');
+        // If the user is not found, display an alert
+        alert('Invalid credentials');
       }
-    } catch (err) {
-      setError('Network error. Please try again later.');
-    } finally {
-      setLoading(false);
+    } catch (error) {
+      console.error('Error logging in:', error);
+      alert('An error occurred while logging in. Please try again later.');
     }
   };
 
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
-    <div className="form-container">
-      <h1>Login</h1>
+    <div className="login">
       <form onSubmit={handleLogin}>
-        <div className="form-group">
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        {error && <div className="error-message">{error}</div>}
-        <div className="button-container">
-          <button type="submit" disabled={loading}>
-            {loading ? 'Loading...' : 'Login'}
+        <label htmlFor="username">Username</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          value={formData.username}
+          onChange={handleChange}
+        />
+        <label htmlFor="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+        <button type="submit">Login</button>
+        <div className="register-user">
+          <span>Not a registered user? </span>
+          <button
+            type="button"
+            onClick={() => navigate('/register')}
+            className="btn btn-link">
+            Create an account
           </button>
-          <div>
-            <span>Not a registered user? </span>
-            <button
-              type="button"
-              onClick={() => navigate('/register')}
-              className="btn btn-link">
-              Create an account
-            </button>
-          </div>
         </div>
       </form>
     </div>

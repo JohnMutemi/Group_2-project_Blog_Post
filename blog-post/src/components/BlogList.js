@@ -22,6 +22,7 @@ const BlogList = () => {
 
   return (
     <div>
+     
       <h2>Featured Blog</h2>
       <FeaturedBlog blogs={featuredBlogs} />
       <h2>Normal Blog</h2>

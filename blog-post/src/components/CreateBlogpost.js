@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const CreateBlogPost = () => {
   const [blogPost, setBlogPost] = useState({
     id: null,
-    title: "",
-    author: "",
-    body: "",
-    category: "",
-    image: "",
+    title: '',
+    author: '',
+    body: '',
+    category: '',
+    image: '',
     featured: false,
   });
 
   const createBlogPost = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8002/posts",
+        'http://localhost:8002/posts',
         blogPost
       );
       console.log(response.data);
     } catch (error) {
-      console.error("Error creating blog post:", error);
+      console.error('Error creating blog post:', error);
     }
   };
 

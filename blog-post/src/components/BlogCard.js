@@ -20,12 +20,14 @@ const BlogCard = ({ blogs }) => {
 
   const deleteBlogPost = async (blog) => {
     try {
-      const response = await axios.delete(`http://localhost:8002/posts/${blog.id}`);
+      const response = await axios.delete(
+        `http://localhost:8002/posts/${blog.id}`
+      );
       console.log(response.data);
       // Reload the page to reflect the deleted blog post
       window.location.reload();
     } catch (error) {
-      console.error("Error deleting blog post:", error);
+      console.error('Error deleting blog post:', error);
     }
   };
 

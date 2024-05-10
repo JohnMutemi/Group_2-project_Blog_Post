@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoutButton from './LogoutButton'; // Import the LogoutButton component
+
 import './NavBar.css';
 
 function NavBar({ isAuthenticated, onLogout }) {
@@ -11,9 +12,7 @@ function NavBar({ isAuthenticated, onLogout }) {
           <li className="topListItem">
             <Link to="/">HOME</Link>
           </li>
-          <li className="topListItem">
-            <Link to="/create-post">CREATE POST</Link>
-          </li>
+
           <li className="topListItem">
             <Link to="/user-profile">USER PROFILE</Link>
           </li>
@@ -25,10 +24,10 @@ function NavBar({ isAuthenticated, onLogout }) {
           ) : (
             <>
               <li className="topListItem">
-                <Link to="/signin">LOG IN</Link> {/* Changed from LOG OUT to LOG IN */}
+                <Link to="/signin">LOG OUT</Link>
               </li>
               <li className="topListItem">
-                <Link to="/register">REGISTER</Link> {/* Added REGISTER */}
+                <Link to="/register">REGISTER</Link>
               </li>
             </>
           )}

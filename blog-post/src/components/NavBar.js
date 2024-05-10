@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import LogoutButton from './LogoutButton'; // Import the LogoutButton component
+import React from "react";
+import { Link } from "react-router-dom";
+import LogoutButton from "./LogoutButton"; // Import the LogoutButton component
 
-import './NavBar.css';
+import "./NavBar.css";
 
 function NavBar({ isAuthenticated, onLogout }) {
   return (
@@ -32,10 +32,6 @@ function NavBar({ isAuthenticated, onLogout }) {
             </>
           )}
         </ul>
-      </div>
-      <div className="topRight">
-        <img src="" alt="" />
-        <i className="fa-solid fa-magnifying-glass"></i>
       </div>
     </nav>
   );

@@ -18,8 +18,8 @@ const UserProfile = () => {
         alert(
           'An error occurred while fetching your profile. Please try again later.'
         );
-        navigate('/');
       });
+    
   }, []);
 
   const handleChange = (e) => {
@@ -27,6 +27,7 @@ const UserProfile = () => {
       ...userData,
       [e.target.name]: e.target.value,
     });
+   
   };
 
   const handleSubmit = (e) => {
@@ -34,13 +35,14 @@ const UserProfile = () => {
 
     // Make a PUT request to update the user's data in the database
     axios
-      .put('http://localhost:8002/users/${userData.id', userData)
+      .put(`http://localhost:8002/users/${userData.id}`, userData)
       .then((res) => {
         alert('Profile updated successfully.');
         // Update the local user data with the updated data from the server
         setUserData(res.data);
         // Reset the form
         e.target.reset();
+         navigate('/');
       })
       .catch((err) => {
         console.error('Error updating user data:', err);

@@ -3,6 +3,7 @@ import { Outlet, useNavigate, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import axios from 'axios';
+import LogoutButton from './components/LogoutButton';
 
 function App() {
   const [user, setUser] = useState(null); // Define a new state variable to hold user information
@@ -42,13 +43,14 @@ function App() {
       {/* Add conditional rendering so users have to be logged in to see pages on the site */}{' '}
       {user ? (
         <>
-          <NavBar logout={logout} Navigate to="./" />
+          <NavBar Navigate to="./" user={user} />
+          <LogoutButton logout={logout} />
           <SearchBar blogs={blogs} />{' '}
         </>
       ) : (
         <Navigate to="/login" />
       )}
-      <Outlet context={{ logout, login, blogs }} />{' '}
+      <Outlet context={{ user, logout, login, blogs }} />{' '}
     </div>
   );
 }

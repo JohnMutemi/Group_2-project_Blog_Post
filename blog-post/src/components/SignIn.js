@@ -3,6 +3,7 @@ import { useNavigate, useOutletContext } from 'react-router-dom';
 import './SignIn.css';
 import axios from 'axios';
 
+
 function SignIn() {
   const navigate = useNavigate();
   const { user, login } = useOutletContext(); // Access the user state from the context

@@ -10,13 +10,12 @@ const BlogModal = ({ blog, isVisible, onClose }) => {
   useEffect(() => {
     if (blog) {
       setLikes(blog.likes || 0);
-      setComments(blog.comments || []); // Ensure comments is initialized as an array
+      setComments(blog.comments || []);
     }
   }, [blog]);
 
   const handleLike = () => {
     setLikes(likes + 1);
-    // Update likes in the database
     axios
       .put(`http://localhost:8002/posts/${blog.id}/like`)
       .then((response) => {
@@ -32,7 +31,6 @@ const BlogModal = ({ blog, isVisible, onClose }) => {
     if (comment.trim()) {
       const updatedComments = [...comments, comment.trim()];
       setComments(updatedComments);
-      // Update comments in the database
       axios
         .put(`http://localhost:8002/posts/${blog.id}/comments`, { comment })
         .then((response) => {
@@ -52,9 +50,6 @@ const BlogModal = ({ blog, isVisible, onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <div className="modal-blog-title">
-          <div className="modal-blog-category">
-            <p>{blog.category}</p>
-          </div>
           <h1>{blog.title}</h1>
           <button className="modal-close" onClick={onClose}>
             ×

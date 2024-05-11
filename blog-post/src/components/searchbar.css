@@ -1,0 +1,47 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  outline: none; /* Remove outline */
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  outline: none; /* Remove outline */
+  background-color: #fff; /* White background */
+}
+
+.filtered-blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.blog-card h2 {
+  margin-bottom: 5px;
+}
+
+.blog-card p {
+  margin-bottom: 10px;
+}

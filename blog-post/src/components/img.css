@@ -57,3 +57,165 @@
   right: 0;
   margin-top: 5rem;
 }
+
+/* The Modal (background) */
+.modal-overlay {
+  position: fixed;
+  z-index: 9999; /* Ensure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  width: 90%;
+  height: 90%;
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  padding: 20px;
+  position: relative;
+}
+
+/* The Close Button */
+.modal-close {
+  font-size: 40px;
+  color: #c21212;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #fff;
+  background-color: #c21212;
+}
+
+/* Blog Title */
+.modal-blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-blog-title h1 {
+  margin: 0;
+  color: #333;
+  font-size: 30px;
+}
+
+/* Blog Category Badge */
+.modal-blog-category {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Blog Image */
+.modal-blog-image {
+  text-align: center;
+}
+
+.modal-blog-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Blog Body */
+.modal-blog-body {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Blog Meta */
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Blog Actions */
+.blog-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-actions button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  font-size: 30px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blog-actions button:hover {
+  background-color: #2980b9;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comments-section ul li {
+  display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #555;
+
+  /* Adjust as needed */
+}
+
+.comments-section textarea {
+  font-size: 30px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comments-section button {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #2ecc71;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comments-section button:hover {
+  background-color: #27ae60;
+}

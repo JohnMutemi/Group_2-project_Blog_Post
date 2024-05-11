@@ -33,10 +33,6 @@ function NavBar({ isAuthenticated, onLogout }) {
           )}
         </ul>
       </div>
-      <div className="topRight">
-        <img src="" alt="" />
-        <i className="fa-solid fa-magnifying-glass"></i>
-      </div>
     </nav>
   );
 }

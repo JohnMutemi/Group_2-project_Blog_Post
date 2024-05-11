@@ -1,94 +1,136 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "Exploring the Wonders of Nature",
-      "author": "Alice Johnson",
-      "body": "From lush forests to towering mountains, nature never fails to inspire awe. Join me on a journey through some of the most breathtaking landscapes on Earth.",
-      "category": "Nature",
-      "image": "https://images.unsplash.com/photo-1664575196851-5318f32c3f43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZ2dlcnxlbnwwfHwwfHx8MA%3D%3D",
-      "featured": "true"
+      "id": 1,
+      "title": "The Future of Remote Learning",
+      "author": "John Smith",
+      "body": "Remote learning has become increasingly prevalent in recent years as technology continues to advance. With the rise of online platforms and virtual classrooms, students now have access to educational resources and opportunities from anywhere in the world. This shift towards remote learning has been accelerated by the COVID-19 pandemic, forcing educational institutions to adapt and innovate. In the future, we can expect to see further integration of technology in education, including virtual reality simulations, personalized learning experiences, and global collaboration.",
+      "category": "education",
+      "image": "https://images.unsplash.com/photo-1619852182277-79aa23f82c8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9ubGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww",
+      "featured": "false",
+      "comments": "",
+      "likes": 2
     },
     {
-      "id": "3",
-      "title": "Unlocking Creativity: Embracing Your Inner Artist",
-      "author": "Sarah Brown",
-      "body": "Creativity knows no bounds. Discover how to tap into your imagination, overcome creative blocks, and unleash your artistic potential in this exploration of the creative process.",
-      "category": "Creativity",
-      "image": "https://plus.unsplash.com/premium_photo-1664199486389-44d320d0afe6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
-      "featured": "false"
+      "id": 2,
+      "title": "Revolutionizing the Classroom with AR Technology",
+      "author": "Emma Johnson",
+      "body": "Augmented Reality (AR) technology has the potential to transform traditional classroom environments by providing immersive and interactive learning experiences. By overlaying digital content onto the real world, AR allows students to visualize complex concepts, explore virtual environments, and engage with educational material in a hands-on manner. From virtual field trips to interactive simulations, AR can enhance student engagement and comprehension across various subjects. As AR technology continues to evolve, we can expect to see its integration into classrooms worldwide, revolutionizing the way we teach and learn.",
+      "category": "education",
+      "image": "https://images.unsplash.com/photo-1502185635613-0a5b2e78efea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QVIlMjBURUNITk9MT0dZfGVufDB8fDB8fHww",
+      "featured": "false",
+      "comments": "",
+      "likes": 2
     },
     {
-      "id": "4",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "true"
+      "id": 3,
+      "title": "The Role of Blockchain in Education",
+      "author": "David Brown",
+      "body": "Blockchain technology is poised to disrupt various industries, including education, by providing secure and transparent systems for managing data and transactions. In education, blockchain can be used to verify academic credentials, track student progress, and ensure the integrity of educational records. By decentralizing data storage and eliminating the need for intermediaries, blockchain technology can empower students, educators, and institutions with greater control over their educational data. As the adoption of blockchain in education continues to grow, we can expect to see increased efficiency, security, and trust in the education system.",
+      "category": "education",
+      "image": "https://media.istockphoto.com/id/1725922767/photo/blockchain-surreal-landscape-for-innovation-and-technology-conceptual-futuristic-abstract.webp?b=1&s=170667a&w=0&k=20&c=1HqQyg3PWSJJ3hlgqQCCuH7bYEXHUqqjY0fiaoldH3M=",
+      "featured": "false",
+      "comments": "",
+      "likes": 2
     },
     {
-      "id": "5",
-      "title": "Urban Exploration: Discovering Hidden Gems in the City",
-      "author": "Emily Wilson",
-      "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
-      "category": "Travel",
-      "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
-      "featured": "false"
+      "id": 4,
+      "title": "The Impact of Artificial Intelligence on Business",
+      "author": "Sophia Miller",
+      "body": "Artificial Intelligence (AI) is reshaping the landscape of modern business by automating processes, analyzing data, and making predictions to optimize decision-making. From chatbots and virtual assistants to predictive analytics and machine learning algorithms, AI technologies are being used across industries to streamline operations, improve customer experiences, and drive innovation. As businesses continue to harness the power of AI, we can expect to see increased efficiency, productivity, and competitiveness in the global marketplace.",
+      "category": "business",
+      "image": "https://plus.unsplash.com/premium_photo-1661877307787-05e6c36d08fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QUklMjBpbiUyMGJ1c2luZXNzfGVufDB8fDB8fHww",
+      "featured": "false",
+      "comments": "",
+      "likes": 4
     },
     {
-      "id": "6",
-      "title": "Urban Exploration: Discovering Hidden Gems in the City",
-      "author": "Emily Wilson",
-      "body": "There's more to a city than meets the eye. Join me as we venture off the beaten path to uncover the hidden treasures and vibrant cultures that lie within urban landscapes.",
-      "category": "Travel",
-      "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2dnZXJ8ZW58MHx8MHx8fDA%3D",
-      "featured": "false"
+      "id": 5,
+      "title": "The Rise of E-commerce: Trends and Challenges",
+      "author": "Michael Johnson",
+      "body": "E-commerce has experienced exponential growth in recent years, driven by advancements in technology, changes in consumer behavior, and the global shift towards digitalization. With the convenience of online shopping and the proliferation of mobile devices, consumers now have access to a wide range of products and services at their fingertips. However, the rise of e-commerce also presents challenges such as cybersecurity threats, supply chain disruptions, and market saturation. To succeed in the e-commerce landscape, businesses must adapt to changing trends, innovate their strategies, and prioritize customer satisfaction.",
+      "category": "business",
+      "image": "https://media.istockphoto.com/id/1347626309/photo/latina-female-using-desktop-computer-with-clothing-online-web-store-to-choose-and-buy-clothes.webp?b=1&s=170667a&w=0&k=20&c=4kUNbsgz6Qx2yGHGw_z3KI814Ekc8xHmrByZ-0VsALM=",
+      "featured": "true",
+      "comments": "",
+      "likes": 2
     },
     {
-      "id": "7",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "false"
+      "id": 6,
+      "title": "Innovations in Financial Technology (Fintech)",
+      "author": "Emily Davis",
+      "body": "Financial Technology (Fintech) innovations are revolutionizing the way we manage money and conduct transactions. From mobile banking apps and digital wallets to peer-to-peer lending platforms and robo-advisors, Fintech solutions are making financial services more accessible, efficient, and affordable for individuals and businesses alike. By leveraging technologies such as blockchain, artificial intelligence, and big data analytics, Fintech companies are creating innovative solutions to address financial challenges and empower consumers with greater control over their finances.",
+      "category": "business",
+      "image": "https://media.istockphoto.com/id/1331910730/photo/woman-using-banking-app-on-the-smartphone-pay-utility-bill-financial-technology-internet.webp?b=1&s=170667a&w=0&k=20&c=SR3J-Cn21YiNzIJ6oc4F3TgJK-QgYJoQ1GzbMDb9IkM=",
+      "featured": "false",
+      "comments": "",
+      "likes": 4
     },
     {
-      "id": "13",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "false"
+      "id": 7,
+      "title": "The Beauty of Nature",
+      "author": "Jennifer Lee",
+      "body": "Experience the beauty of nature through stunning photography capturing landscapes, wildlife, and natural wonders from around the world. From majestic mountains to tranquil forests, let these images inspire awe and appreciation for the natural world.",
+      "category": "nature",
+      "image": "https://media.istockphoto.com/id/1427253066/photo/the-pontusval-lighthouse-located-on-a-rocky-point-in-northern-finistere-in-brittany-overlooks.webp?b=1&s=170667a&w=0&k=20&c=UlJQA5edAHd8d7BmE_WWpXt3sWGtgh5-G8r3Hr5A2Wc=",
+      "featured": "true",
+      "comments": "",
+      "likes": 2
     },
     {
-      "id": "14",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "false"
+      "id": 8,
+      "title": "Exploring Space: The Final Frontier",
+      "author": "Christopher Davis",
+      "body": "Embark on a journey through the cosmos and explore the wonders of space. From distant galaxies to sparkling nebulae, let your imagination soar as you discover the mysteries of the universe.",
+      "category": "science",
+      "image": "https://media.istockphoto.com/id/1487692063/photo/following-shot-of-brave-astronaut-in-space-suit-confidently-walking-on-the-moon-away-from.webp?b=1&s=170667a&w=0&k=20&c=u-JePp8ZM-0M5Xa_Ajjd2l7KUoDkcx_9jAaH905B1wc=",
+      "featured": "false",
+      "comments": "",
+      "likes": 1
     },
     {
-      "id": "15",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "false"
+      "id": 9,
+      "title": "Exploring Underwater Worlds",
+      "author": "Sarah Thompson",
+      "body": "Dive beneath the surface and explore the wonders of underwater worlds. From vibrant coral reefs to mysterious shipwrecks, let these images transport you to a realm of beauty and discovery. The ocean is home to a vast array of marine life, from colorful fish and graceful sea turtles to majestic whales and elusive sharks. As you embark on your underwater journey, you'll witness the intricate ecosystems that sustain life beneath the waves. With each dive, you'll gain a deeper appreciation for the fragile balance of nature and the importance of preserving our oceans for future generations.",
+      "category": "nature",
+      "image": "https://media.istockphoto.com/id/498283106/photo/underwater-scuba-diver-explore-and-enjoy-coral-reef-sea-life.webp?b=1&s=170667a&w=0&k=20&c=RHZFiaz2V8ICB69B39YzqAW22a64rzfVGhvrokGMQj4=",
+      "featured": "false",
+      "comments": "",
+      "likes": 3
     },
     {
-      "id": "16",
-      "title": "Mindfulness Meditation: Finding Peace in the Present Moment",
-      "author": "David Lee",
-      "body": "In today's fast-paced world, mindfulness meditation offers a sanctuary of calm amidst the chaos. Learn how to cultivate mindfulness and live with greater awareness and intention.",
-      "category": "Wellness",
-      "image": "https://media.istockphoto.com/id/1479305601/photo/social-media-day-concept-female-freelancer-starting-working-day-early-in-morning-drinking.webp?b=1&s=170667a&w=0&k=20&c=61znU_v9lwLKqo7wGMll9eX91LNC92FogfaNAZGndLg=",
-      "featured": "false"
+      "id": 10,
+      "title": "The Art of Cooking: A Culinary Adventure",
+      "author": "Michael Smith",
+      "body": "Dive into the world of flavors and techniques as we explore the art of cooking. From mastering basic recipes to experimenting with exotic ingredients, there's something for every aspiring chef.",
+      "category": "food",
+      "image": "https://media.istockphoto.com/id/1327235156/photo/chefs-gourmet-dish.webp?b=1&s=170667a&w=0&k=20&c=AlL4e0ZuermQ-IVL7b2-hjkA8c28eRQ9s9qmSQN3hsU=",
+      "featured": "false",
+      "comments": "",
+      "likes": 3
+    },
+    {
+      "id": 11,
+      "title": "The Power of Renewable Energy",
+      "author": "Daniel Martinez",
+      "body": "Renewable energy sources such as solar, wind, and hydroelectric power are becoming increasingly important in the transition to a sustainable future. By harnessing natural resources to generate electricity, renewable energy offers a clean and environmentally friendly alternative to fossil fuels. With advancements in technology and growing investment in renewable infrastructure, we have the potential to reduce carbon emissions, combat climate change, and create a more resilient energy system for generations to come.",
+      "category": "science",
+      "image": "https://media.istockphoto.com/id/1161944520/photo/solar-panel-and-wind-turbine-farm-clean-energy.webp?b=1&s=170667a&w=0&k=20&c=zlISc1OiGCLaeZTezoCCIxQtLyZ-QauuynsHlSlhmI4=",
+      "featured": "false",
+      "comments": "",
+      "likes": 4
+    },
+    {
+      "id": 12,
+      "title": "The Art of Baking: Delicious Creations",
+      "author": "Olivia White",
+      "body": "Indulge your senses with the art of baking and discover the joy of creating delicious treats from scratch. From decadent cakes and pastries to savory breads and pies, let these recipes inspire your culinary adventures.",
+      "category": "food",
+      "image": " https://media.istockphoto.com/id/1182521484/photo/art-has-many-forms.webp?b=1&s=170667a&w=0&k=20&c=6DxnsK5y5tkx11MOF1NDmlTwJ-aPw3AS7BRLHQCe5Sg=",
+      "featured": "false",
+      "comments": "",
+      "likes": 3
     }
   ],
   "users": [
@@ -103,6 +145,36 @@
     },
     {
       "id": "b943"
+    },
+    {
+      "id": "",
+      "username": "nikoo",
+      "email": "joh@mail.com",
+      "password": "were"
+    },
+    {
+      "id": "",
+      "username": "johnmutemi",
+      "email": "juma@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "",
+      "username": "Mike Doe",
+      "email": "jmd@yahoo.com",
+      "password": "098"
+    },
+    {
+      "id": "",
+      "username": "kelly",
+      "email": "kelly@gmail.com",
+      "password": "456"
+    },
+    {
+      "id": "",
+      "username": "william",
+      "email": "mobeso@gmail.com",
+      "password": "kuria"
     }
   ]
 }

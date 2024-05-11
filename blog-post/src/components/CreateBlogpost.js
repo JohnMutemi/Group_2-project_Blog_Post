@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 const CreateBlogPost = () => {
   const [blogPost, setBlogPost] = useState({
-    id: null,
+    id: uuidv4(),
     title: '',
     author: '',
     body: '',
     category: '',
     image: '',
-    featured: false,
+    featured: 'false',
   });
-
+  const navigate = useNavigate();
   const createBlogPost = async () => {
     try {
       const response = await axios.post(
@@ -22,6 +24,7 @@ const CreateBlogPost = () => {
     } catch (error) {
       console.error('Error creating blog post:', error);
     }
+    navigate('/');
   };
 
   const handleSubmit = (e) => {

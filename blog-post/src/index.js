@@ -4,6 +4,8 @@ import SignIn from './components/SignIn';
 import App from './App';
 import Home from './components/Home';
 import CreateBlogPost from './components/CreateBlogpost';
+import UserProfile from './components/UserProfile';
+import Register from './components/Register';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -21,6 +23,18 @@ const router = createBrowserRouter([
       {
         path: '/create-blog-post',
         element: <CreateBlogPost />,
+      },
+      {
+        path: '/user-profile',
+        element: <UserProfile />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
+      },
+      {
+        path: '/user-profile',
+        element: <UserProfile />,
       },
     ],
   },

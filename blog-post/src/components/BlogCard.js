@@ -32,28 +32,30 @@ const BlogCard = ({ blogs }) => {
   };
 
   return (
-    <>
-      {blogs.map((blog) => (
-        <div key={blog.id} className="blog-post">
-          <h3>{blog.title}</h3>
-          {blog.image && (
-            <img className="blog-image" src={blog.image} alt={blog.title} />
-          )}
-          <p>
-            {truncateText(blog.body, 100)}{' '}
-            <button onClick={() => handleOpenModal(blog)}>Read More</button>
-          </p>
-          <p>{blog.category}</p>
-          <p>{blog.author}</p>
-          <button onClick={() => deleteBlogPost(blog)}>Delete post</button>
-        </div>
-      ))}
+    <div className="blog-container">
+      <div className="blog-list">
+        {blogs.map((blog) => (
+          <div key={blog.id} className="blog-post">
+            <h3>{blog.title}</h3>
+            {blog.image && (
+              <img className="blog-image" src={blog.image} alt={blog.title} />
+            )}
+            <p>
+              {truncateText(blog.body, 100)}{' '}
+              <button onClick={() => handleOpenModal(blog)}>Read More</button>
+            </p>
+            <p>{blog.category}</p>
+            <p>{blog.author}</p>
+            {/* <button onClick={() => deleteBlogPost(blog)}>Delete post</button> */}
+          </div>
+        ))}
+      </div>
       <BlogModal
         blog={selectedBlog}
         isVisible={Boolean(selectedBlog)}
         onClose={handleCloseModal}
       />
-    </>
+    </div>
   );
 };
 

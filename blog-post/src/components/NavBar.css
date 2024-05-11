@@ -4,23 +4,22 @@
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center items horizontally */
-  padding: 10px 10px; /* Decrease padding to make it narrower */
   background-color: rgb(235, 141, 18);
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .topList {
   display: flex;
   list-style-type: none;
   padding: 0;
+  justify-content: center;
   justify-content: center; /* Center items horizontally */
 }
 
 .topListItem {
   margin-right: 20px;
+  padding: 0 10px;
   padding: 0 10px; /* Add padding for spacing between items */
 }
 

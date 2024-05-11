@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useOutletContext } from 'react-router-dom';
 import './SignIn.css';
 import axios from 'axios';
 
+
 function SignIn() {
   const navigate = useNavigate();
+  const { user, login } = useOutletContext(); // Access the user state from the context
+
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -25,6 +28,7 @@ function SignIn() {
       if (foundUser) {
         // If the user is found, set isAuthenticated to true
         navigate('/');
+        login(foundUser);
       } else {
         // If the user is not found, display an alert
         alert('Invalid credentials');
@@ -44,8 +48,9 @@ function SignIn() {
 
   return (
     <div className="login">
+      {' '}
       <form onSubmit={handleLogin}>
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username">Username</label>{' '}
         <input
           id="username"
           type="text"
@@ -53,7 +58,7 @@ function SignIn() {
           value={formData.username}
           onChange={handleChange}
         />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password</label>{' '}
         <input
           id="password"
           type="password"
@@ -61,17 +66,17 @@ function SignIn() {
           value={formData.password}
           onChange={handleChange}
         />
-        <button type="submit">Login</button>
+        <button type="submit">Login</button>{' '}
         <div className="register-user">
-          <span>Not a registered user? </span>
+          <span>Not a registered user? </span>{' '}
           <button
             type="button"
             onClick={() => navigate('/register')}
             className="btn btn-link">
-            Create an account
-          </button>
-        </div>
-      </form>
+            Create an account{' '}
+          </button>{' '}
+        </div>{' '}
+      </form>{' '}
     </div>
   );
 }

@@ -145,6 +145,12 @@
       "username": "felix",
       "email": "jmd@yahoo.com",
       "password": "123"
+    },
+    {
+      "id": "",
+      "username": "lilian",
+      "email": "lilliannzioki@gmail.com",
+      "password": "dfghnf"
     }
   ]
 }

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; 
+// import { Link } from 'react-router-dom';
+import './searchbar.css';
 
 const SearchBar = ({ blogs, logout }) => {
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-
 
   useEffect(() => {
     // Ensure blogs data is available before filtering

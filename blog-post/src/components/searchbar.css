@@ -2,9 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 50px; /* Adjust margin to move search bar to the middle of the page */
 }
 
+.search-bar select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 200px;
+  color: #333; /* Change text color */
+  background-color: #ffdab9;
+  appearance: none; /* Remove default dropdown arrow */
+}
+
+/* Style the dropdown arrow */
+.search-bar select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Avoid interfering with select functionality */
+}
 input[type='text'] {
   padding: 10px;
   margin-bottom: 10px;
@@ -31,7 +52,6 @@ select {
 }
 
 .blog-card {
-  
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;

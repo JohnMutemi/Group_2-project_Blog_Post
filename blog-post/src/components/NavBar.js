@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 // import LogoutButton from './LogoutButton'; // Import the LogoutButton component
 
-import './NavBar.css';
+import "./NavBar.css";
 
 function NavBar({ user, isAuthenticated, onLogout }) {
   return (
@@ -12,15 +12,20 @@ function NavBar({ user, isAuthenticated, onLogout }) {
           <li className="topListItem">
             <Link to="/">HOME</Link>
           </li>
+          <li className="topListItem">
+            <Link to="/about">ABOUT</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/contact">CONTACT US</Link>
+          </li>
 
           <li className="topListItem">
             <Link to="/user-profile">USER PROFILE</Link>
           </li>
 
-          <li className="topListItem">
+          {/* <li className="topListItem">
             <Link to="/register">REGISTER</Link>
-          </li>
-          {/* You can add more navigation items here */}
+          </li> */}
         </ul>
       </div>
     </nav>

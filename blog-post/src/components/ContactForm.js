@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import './ContactForm.css'; // Import CSS file
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -34,49 +35,52 @@ const ContactForm = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="name">
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </Form.Group>
-      <Form.Group controlId="email">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </Form.Group>
-      <Form.Group controlId="message">
-        <Form.Label>Message</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}
-          placeholder="Enter your message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-      </Form.Group>
-      <Button variant="primary" type="submit" disabled={submitting}>
-        Send
-      </Button>
-      {success && (
-        <Alert variant="success" className="mt-3">
-          Message sent successfully!
-        </Alert>
-      )}
-      {error && (
-        <Alert variant="danger" className="mt-3">
-          Message sent successfully!
-        </Alert>
-      )}
-    </Form>
+    <div className="contact-form-container">
+      <h1>Contact Us</h1>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="name">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group controlId="message">
+          <Form.Label>Message</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={5} // Increase the number of rows
+            placeholder="Enter your message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit" disabled={submitting}>
+          Send
+        </Button>
+        {success && (
+          <Alert variant="success" className="mt-3">
+            Message sent successfully!
+          </Alert>
+        )}
+        {error && (
+          <Alert variant="danger" className="mt-3">
+            Message sent successfully!
+          </Alert>
+        )}
+      </Form>
+    </div>
   );
 };
 

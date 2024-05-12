@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './img.css';
 import BlogModal from './BlogModal';
+import './BlogCard.css'
 
 const truncateText = (text, length) => {
   return text.length > length ? `${text.substring(0, length)}...` : text;
@@ -44,8 +45,8 @@ const BlogCard = ({ blogs }) => {
               {truncateText(blog.body, 100)}{' '}
               <button onClick={() => handleOpenModal(blog)}>Read More</button>
             </p>
-            <p>{blog.category}</p>
-            <p>{blog.author}</p>
+            <p className="category">{blog.category}</p>
+            <p className= "category">{blog.author}</p>
             {/* <button onClick={() => deleteBlogPost(blog)}>Delete post</button> */}
           </div>
         ))}

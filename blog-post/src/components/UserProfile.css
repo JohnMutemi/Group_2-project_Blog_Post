@@ -1,0 +1,52 @@
+/* UserProfile.css */
+
+.user-profile-container {
+  background-color: #f0f2f5; /* Light grey background */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Exciting font */
+  max-width: 600px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  border-radius: 10px; /* Add some rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.user-profile-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark grey for the header */
+  text-align: center; /* Center-align the header */
+  margin-bottom: 30px; /* Add some spacing below the header */
+}
+
+.user-profile-container form {
+  margin-top: 20px; /* Add some spacing above the form */
+}
+
+.user-profile-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666; /* Dark grey for labels */
+}
+
+.user-profile-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif; /* Exciting font for input fields */
+}
+
+.user-profile-container input[type="submit"] {
+  background-color: #321238; /* Google Blue for the submit button */
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Reduce padding */
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button fill the container */
+}
+
+.user-profile-container input[type="submit"]:hover {
+  background-color: #3e1c4e; /* Darker shade for hover effect */
+}

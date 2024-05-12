@@ -1,0 +1,58 @@
+/* CreateBlogPost.css */
+
+.create-blog-container {
+    background-color: #f0f2f5; /* Light grey background */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Exciting font */
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    border-radius: 10px; /* Add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .create-blog-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark grey for the header */
+    text-align: center; /* Center-align the header */
+    margin-bottom: 30px; /* Add some spacing below the header */
+  }
+  
+  .create-blog-container form {
+    margin-top: 20px; /* Add some spacing above the form */
+  }
+  
+  .create-blog-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666; /* Dark grey for labels */
+  }
+  
+  .create-blog-container input,
+  .create-blog-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; /* Exciting font for input fields */
+  }
+  
+  .create-blog-container input[type="checkbox"] {
+    margin-top: 10px; /* Add some spacing above the checkbox */
+  }
+  
+  .create-blog-container input[type="submit"] {
+    background-color: #4e194c; /* Google Blue for the submit button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px; /* Adjust padding */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button fill the container */
+  }
+  
+  .create-blog-container input[type="submit"]:hover {
+    background-color: #5c4161; /* Darker shade for hover effect */
+  }
+  

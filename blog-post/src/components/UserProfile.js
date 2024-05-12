@@ -1,6 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './UserProfile.css'; // Import CSS file
 
 const UserProfile = () => {
   const { user } = useOutletContext(); // Access the user state from the context
@@ -27,7 +28,6 @@ const UserProfile = () => {
       ...userData,
       [e.target.name]: e.target.value,
     });
-   
   };
 
   const handleSubmit = (e) => {
@@ -42,7 +42,7 @@ const UserProfile = () => {
         setUserData(res.data);
         // Reset the form
         e.target.reset();
-         navigate('/');
+        navigate('/');
       })
       .catch((err) => {
         console.error('Error updating user data:', err);
@@ -53,7 +53,7 @@ const UserProfile = () => {
   };
 
   return (
-    <div>
+    <div className="user-profile-container"> {/* Apply container class */}
       <h1>User Profile</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username:</label>

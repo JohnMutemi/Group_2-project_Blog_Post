@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
-import './SignIn.css';
+import './SignIn.css'; // Import the provided CSS file
 import axios from 'axios';
-
 
 function SignIn() {
   const navigate = useNavigate();
@@ -47,8 +46,8 @@ function SignIn() {
   };
 
   return (
-    <div className="login">
-      {' '}
+    <div className="login"> {/* Apply login class for the styling */}
+      <h1 className="header">EXPLORE CAPTIVATING BLOG POSTS!</h1> {/* Apply header with specified text */}
       <form onSubmit={handleLogin}>
         <label htmlFor="username">Username</label>{' '}
         <input

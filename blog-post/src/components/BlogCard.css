@@ -1,0 +1,59 @@
+/* BlogCard.css */
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .blog-post {
+    flex-basis: calc(33.33% - 20px); /* Adjust width for 3 cards in a row */
+    margin-bottom: 20px;
+    padding: 15px; /* Reduce padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  .blog-post h3 {
+    font-size: 20px; /* Increase title font size */
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Use a unique font */
+    color: #333; /* Change title color */
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    margin-bottom: 8px; /* Reduce paragraph margin */
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; /* Use a unique font */
+    color: #555; /* Change body text color */
+  }
+  
+  .blog-post .author {
+    font-style: italic; /* Style author differently */
+    color: #777; /* Change author text color */
+  }
+  
+  .blog-post .category {
+    font-weight: bold; /* Style category differently */
+    color: #7e3574; /* Change category text color */
+  }
+  
+  .blog-post button {
+    background-color: #7e3574;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .blog-post button:hover {
+    background-color: #0056b3;
+  }

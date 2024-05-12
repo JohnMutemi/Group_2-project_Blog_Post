@@ -40,7 +40,7 @@
 .registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: teal;
+  background-color: rgb(96, 61, 99);
   color: white;
   padding: 10px;
   border: none;

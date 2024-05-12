@@ -6,7 +6,7 @@
   display: flex;
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
-  background-color: rgb(235, 141, 18);
+  background-color: rgb(141, 39, 115);
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -35,3 +35,4 @@
 .topListItem a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+

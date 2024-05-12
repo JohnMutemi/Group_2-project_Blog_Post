@@ -33,7 +33,7 @@ const SearchBar = ({ blogs, logout }) => {
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
       >
-        <option value="">Search blogs categorically</option>
+        <option value="">Search Category</option>
         <option value="All">All</option>
         {categories.map((category) => (
           <option key={category} value={category}>

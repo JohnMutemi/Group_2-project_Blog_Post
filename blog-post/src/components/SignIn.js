@@ -46,38 +46,45 @@ function SignIn() {
   };
 
   return (
-    <div className="login"> {/* Apply login class for the styling */}
-      <h1 className="header">EXPLORE CAPTIVATING BLOG POSTS!</h1> {/* Apply header with specified text */}
-      <form onSubmit={handleLogin}>
-        <label htmlFor="username">Username</label>{' '}
-        <input
-          id="username"
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-        <label htmlFor="password">Password</label>{' '}
-        <input
-          id="password"
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-        <button type="submit">Login</button>{' '}
-        <div className="register-user">
-          <span>Not a registered user? </span>{' '}
-          <button
-            type="button"
-            onClick={() => navigate('/register')}
-            className="btn btn-link">
-            Create an account{' '}
-          </button>{' '}
-        </div>{' '}
-      </form>{' '}
+    <div>
+      <div className="header-container"> {/* Div for header */}
+        <h1 className="header">EXPLORE CAPTIVATING BLOG POSTS!</h1> {/* Apply header with specified text */}
+      </div>
+      <div className="background-container"> {/* Apply background-container class */}
+        <div className="login"> {/* Apply login class for the styling */}
+          <form onSubmit={handleLogin}>
+            <label htmlFor="username">Username</label>{' '}
+            <input
+              id="username"
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+            />
+            <label htmlFor="password">Password</label>{' '}
+            <input
+              id="password"
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+            <button type="submit" className="button">Login</button>{' '} {/* Apply button class */}
+            <div className="register-user">
+              <span>Not a registered user? </span>{' '}
+              <button
+                type="button"
+                onClick={() => navigate('/register')}
+                className="btn btn-link">
+                Create an account{' '}
+              </button>{' '}
+            </div>{' '}
+          </form>{' '}
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default SignIn;

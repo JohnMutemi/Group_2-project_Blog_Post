@@ -9,6 +9,9 @@
     border-radius: 10px; /* Add some rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
+  .create-post-button {
+    background-color: #862643;
+    }
   
   .create-blog-container h1 {
     font-size: 24px;
@@ -53,6 +56,6 @@
   }
   
   .create-blog-container input[type="submit"]:hover {
-    background-color: #5c4161; /* Darker shade for hover effect */
+    background-color: #6e3579; /* Darker shade for hover effect */
   }
   

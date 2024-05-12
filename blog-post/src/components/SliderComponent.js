@@ -46,8 +46,8 @@ const SliderComponent = ({ blogs }) => {
               {truncateText(blog.body, 100)}{' '}
               <button onClick={() => handleOpenModal(blog)}>Read More</button>
             </p>
-            <p>{blog.category}</p>
-            <p>{blog.author}</p>
+            <p className="category">{blog.category}</p>
+          <p className="author">{blog.author}</p>
           </div>
         ))}
       </Slider>

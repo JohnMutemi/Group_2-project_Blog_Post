@@ -1,0 +1,21 @@
+.create-post-button {
+    background-color: #f5f5dc; /* Light paige background color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensures button takes up full width */
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+  }
+  
+  .create-post-button a {
+    text-decoration: none; /* Remove underline from link */
+    color: #333; /* Dark text color */
+    font-weight: bold;
+  }
+  
+  .create-post-button:hover {
+    background-color: #e0e0b6; /* Lighten background color on hover */
+  }
+  

@@ -12,14 +12,20 @@ function NavBar({ user, isAuthenticated, onLogout }) {
           <li className="topListItem">
             <Link to="/">HOME</Link>
           </li>
+          <li className="topListItem">
+            <Link to="/about">ABOUT</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/contact">CONTACT US</Link>
+          </li>
 
           <li className="topListItem">
             <Link to="/user-profile">USER PROFILE</Link>
           </li>
 
-          <li className="topListItem">
+          {/* <li className="topListItem">
             <Link to="/register">REGISTER</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

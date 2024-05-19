@@ -12,7 +12,7 @@ const UserProfile = () => {
   useEffect(() => {
     // Fetch the logged-in user's data from the server
     axios
-      .get(`http://localhost:8002/users/${user.id}`)
+      .get(`http://localhost:3000/users/${user.id}`)
       .then((res) => setUserData(res.data))
       .catch((err) => {
         console.error('Error fetching user data:', err);
@@ -20,7 +20,6 @@ const UserProfile = () => {
           'An error occurred while fetching your profile. Please try again later.'
         );
       });
-    
   }, []);
 
   const handleChange = (e) => {
@@ -53,7 +52,9 @@ const UserProfile = () => {
   };
 
   return (
-    <div className="user-profile-container"> {/* Apply container class */}
+    <div className="user-profile-container">
+      {' '}
+      {/* Apply container class */}
       <h1>User Profile</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username:</label>

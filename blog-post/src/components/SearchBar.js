@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
-import "./searchbar.css";
+import './searchbar.css';
 
 const SearchBar = ({ blogs, logout }) => {
   const [filteredBlogs, setFilteredBlogs] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
     // Ensure blogs data is available before filtering
@@ -13,9 +13,9 @@ const SearchBar = ({ blogs, logout }) => {
 
     // Filter the blog posts based on the search term and selected category
     let filtered = blogs.filter((blog) => {
-      const name = blog.title ? blog.title.toLowerCase() : "";
+      const name = blog.title ? blog.title.toLowerCase() : '';
       const categoryMatch =
-        selectedCategory === "All" || blog.category === selectedCategory;
+        selectedCategory === 'All' || blog.category === selectedCategory;
       return categoryMatch && name.includes(searchTerm.toLowerCase());
     });
 
@@ -31,8 +31,7 @@ const SearchBar = ({ blogs, logout }) => {
     <div className="search-bar">
       <select
         value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
-      >
+        onChange={(e) => setSelectedCategory(e.target.value)}>
         <option value="">Search Category</option>
         <option value="All">All</option>
         {categories.map((category) => (

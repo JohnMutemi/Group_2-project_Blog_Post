@@ -9,7 +9,7 @@ const BlogPostDetail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8002/posts/${id}`)
+      .get(`http://localhost:3000/posts/${id}`)
       .then((res) => {
         setBlog(res.data);
       })

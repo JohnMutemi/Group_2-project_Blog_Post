@@ -19,7 +19,7 @@ const CreateBlogPost = () => {
   const createBlogPost = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:8002/posts',
+        'http://localhost:3000/posts',
         blogPost
       );
       console.log(response.data);
@@ -36,7 +36,9 @@ const CreateBlogPost = () => {
   };
 
   return (
-    <div className="create-blog-container"> {/* Apply container class */}
+    <div className="create-blog-container">
+      {' '}
+      {/* Apply container class */}
       <h1>Create Blog Post</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>

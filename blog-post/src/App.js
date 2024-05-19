@@ -12,7 +12,7 @@ function App() {
   const navigate = useNavigate(); // Fetch all blog posts from the server
   useEffect(() => {
     axios
-      .get('http://localhost:8002/posts')
+      .get('http://localhost:3000/posts')
       .then((res) => setBlogs(res.data))
       .catch((err) => console.log(err));
   }, []);

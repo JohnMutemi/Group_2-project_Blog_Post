@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // import LogoutButton from './LogoutButton'; // Import the LogoutButton component
 
-import "./NavBar.css";
+import './NavBar.css';
 
 function NavBar({ user, isAuthenticated, onLogout }) {
   return (

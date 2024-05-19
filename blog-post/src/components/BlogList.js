@@ -8,7 +8,7 @@ const BlogList = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8002/posts')
+      .get('http://localhost:3000/posts')
       .then((res) => {
         setBlogs(res.data);
       })

@@ -17,7 +17,7 @@ function SignIn() {
 
     try {
       // Make a GET request to fetch the existing users from the server
-      const response = await axios.get('http://localhost:8002/users');
+      const response = await axios.get('http://localhost:3000/users');
       const users = response.data;
       const foundUser = users.find(
         (user) =>
@@ -47,11 +47,18 @@ function SignIn() {
 
   return (
     <div>
-      <div className="header-container"> {/* Div for header */}
-        <h1 className="header">EXPLORE CAPTIVATING BLOG POSTS!</h1> {/* Apply header with specified text */}
+      <div className="header-container">
+        {' '}
+        {/* Div for header */}
+        <h1 className="header">EXPLORE CAPTIVATING BLOG POSTS!</h1>{' '}
+        {/* Apply header with specified text */}
       </div>
-      <div className="background-container"> {/* Apply background-container class */}
-        <div className="login"> {/* Apply login class for the styling */}
+      <div className="background-container">
+        {' '}
+        {/* Apply background-container class */}
+        <div className="login">
+          {' '}
+          {/* Apply login class for the styling */}
           <form onSubmit={handleLogin}>
             <label htmlFor="username">Username</label>{' '}
             <input
@@ -69,7 +76,10 @@ function SignIn() {
               value={formData.password}
               onChange={handleChange}
             />
-            <button type="submit" className="button">Login</button>{' '} {/* Apply button class */}
+            <button type="submit" className="button">
+              Login
+            </button>{' '}
+            {/* Apply button class */}
             <div className="register-user">
               <span>Not a registered user? </span>{' '}
               <button
@@ -85,6 +95,5 @@ function SignIn() {
     </div>
   );
 }
-
 
 export default SignIn;

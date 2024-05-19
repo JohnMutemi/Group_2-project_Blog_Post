@@ -1,9 +1,8 @@
 import App from './App';
-import CreateBlogPost from './components/CreateBlogpost'; // Changed import path
+import CreateBlogPost from './components/CreateBlogpost';
 import Home from './components/Home';
 
 import SignIn from './components/SignIn';
-// import Register from './components/Register'; // Corrected capitalization in import path
 
 const routes = [
   {

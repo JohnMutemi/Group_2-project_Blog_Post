@@ -17,7 +17,7 @@ const BlogModal = ({ blog, isVisible, onClose }) => {
   const handleLike = () => {
     setLikes(likes + 1);
     axios
-      .put(`http://localhost:8002/posts/${blog.id}/like`)
+      .put(`http://localhost:3000/posts/${blog.id}/like`)
       .then((response) => {
         // Handle success
       })
@@ -32,7 +32,7 @@ const BlogModal = ({ blog, isVisible, onClose }) => {
       const updatedComments = [...comments, comment.trim()];
       setComments(updatedComments);
       axios
-        .put(`http://localhost:8002/posts/${blog.id}/comments`, { comment })
+        .put(`http://localhost:3000/posts/${blog.id}/comments`, { comment })
         .then((response) => {
           // Handle success
         })

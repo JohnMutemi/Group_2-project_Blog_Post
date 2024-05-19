@@ -5,7 +5,7 @@ function ServeData() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/.netlify/functions/getData')
+    fetch('/.netlify/functions/GetData')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
